@@ -183,4 +183,9 @@
                 android:title="@string/selinux_status"
                 android:summary="@string/selinux_status_enforcing"/>
 
+        <!-- Konsta forum link -->
+        <Preference android:key="konsta_web"
+                android:title="@string/konsta_web_title"
+                android:summary="@string/konsta_web_summary"/>
+
 </PreferenceScreen>

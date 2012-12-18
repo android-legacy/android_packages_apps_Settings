@@ -21,6 +21,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.SELinux;
@@ -30,6 +31,7 @@ import android.os.UserHandle;
 import android.preference.Preference;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
+import android.preference.Preference.OnPreferenceClickListener;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -181,6 +183,16 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment {
         // Remove regulatory information if not enabled.
         removePreferenceIfBoolFalse(KEY_REGULATORY_INFO,
                 R.bool.config_show_regulatory_info);
+
+        findPreference("konsta_web").setOnPreferenceClickListener(
+            new OnPreferenceClickListener() {
+                public boolean onPreferenceClick(Preference preference) {
+                    Intent browserIntent = new Intent("android.intent.action.VIEW",
+                            Uri.parse(getString(R.string.konsta_web_url)));
+                    startActivity(browserIntent);
+                    return true;
+                }
+            });
     }
 
     @Override
