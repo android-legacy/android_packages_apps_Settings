@@ -679,6 +679,8 @@
     <string name="sound_effects_enable_title" msgid="1171590821131077296">"Dźwięki przy dotknięciu"</string>
     <string name="lock_sounds_enable_title" msgid="450098505659399520">"Dźwięk blokady ekranu"</string>
     <string name="haptic_feedback_enable_title" msgid="2438293710530828760">"Wibracje przy dotknięciu"</string>
+    <string name="camera_sounds_title">Dźwięk migawki</string>
+    <string name="camera_sounds_summary">UWAGA: w niektórych krajach używanie aparatu nie wydającego dźwięku migawki jest nielegalne!</string>
     <string name="audio_record_proc_title" msgid="4271091199976457534">"Eliminowanie szumu"</string>
     <string name="volume_media_description" msgid="7949355934788807863">"Muzyka, filmy, gry i inne multimedia"</string>
     <string name="volume_ring_description" msgid="5936851631698298989">"Dzwonek i powiadomienia"</string>
